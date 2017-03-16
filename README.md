@@ -1,3 +1,32 @@
+Notes from David
+===============
+Installation
+```
+$ sudo apt-get install ros-kinetic-octomap-mapping
+$ sudo apt-get install ros-kinetic-cv-bridge
+$ sudo apt-get install ros-kinetic-yaml-cpp-0-3
+$ sudo apt-get install ros-kinetic-mavros-msgs
+$ sudo apt-get install ros-kinetic-mavros
+```
+
+Add the following to the end of your .bashrc file.
+```
+source ~/rotors_simulator/devel/setup.sh
+```
+Once the line is added to your .bashrc, source them to apply:
+```
+. .bashrc
+```
+Github and Compile with.
+```
+$ cd ~
+$ git clone git@github.com:davidswords/rotors_simulator.git
+$ cd rotors_simulator
+$ catkin_make [Will likely fail at the end of this build, remedy by running catkin_make a second time.]
+$ catkin_make
+```
+After this, everything should work in kinetic.
+
 RotorS
 ===============
 
