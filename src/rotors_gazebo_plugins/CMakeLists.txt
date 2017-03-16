@@ -301,8 +301,16 @@ if (BUILD_MAVLINK_INTERFACE_PLUGIN)
   set(MAVLINK_HEADERS_FOUND FALSE)
   
   # First, check to see if MAVLink headers were passed in as variable
+  set(MAVLINK_HEADER_DIR "/opt/ros/kinetic/include/mavlink/v2.0/")
+
+  message(STATUS "sssssssssssssssssssssssMAVLINK_HEADER_DIR provided as '${MAVLINK_HEADER_DIR}'.")
+  message(STATUS "MAVLINK_HEADER_DIR provided as '${MAVLINK_HEADER_DIR}'.")
+  message(STATUS "MAVLINK_HEADER_DIR provided as '${MAVLINK_HEADER_DIR}'.")
+  message(STATUS "MAVLINK_HEADER_DIR provided as '${MAVLINK_HEADER_DIR}'.")
+  message(STATUS "MAVLINK_HEADER_DIR provided as '${MAVLINK_HEADER_DIR}'.")
+  message(STATUS "MAVLINK_HEADER_DIR provided as '${MAVLINK_HEADER_DIR}'.")
+  message(STATUS "MAVLINK_HEADER_DIR provided as '${MAVLINK_HEADER_DIR}'.")
   if(NOT ${MAVLINK_HEADER_DIR} STREQUAL "")
-  
     message(STATUS "MAVLINK_HEADER_DIR provided as '${MAVLINK_HEADER_DIR}'.")
     include_directories(${MAVLINK_HEADER_DIR})
     set(MAVLINK_HEADERS_FOUND TRUE)
@@ -311,9 +319,9 @@ if (BUILD_MAVLINK_INTERFACE_PLUGIN)
   
     message(STATUS "MAVLINK_HEADER_DIR not provided, falling back to looking at default paths...")
     # If ROS indigo is installed, we should be able to find them at the path below
-    if(EXISTS /opt/ros/indigo/include/mavlink/v1.0/)
-      message(STATUS "Found MAVLink headers at '/opt/ros/indigo/include/mavlink/v1.0/'.")
-      include_directories("/opt/ros/indigo/include/mavlink/v1.0/")
+    if(EXISTS /opt/ros/kinetic/include/mavlink/v2.0/)
+      message(STATUS "Found MAVLink headers at '/opt/ros/kinetic/include/mavlink/v2.0/'.")
+      include_directories("/opt/ros/kinetic/include/mavlink/v2.0/")
       set(MAVLINK_HEADERS_FOUND TRUE)
     endif()
     

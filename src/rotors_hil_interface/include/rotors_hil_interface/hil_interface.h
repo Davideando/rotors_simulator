@@ -21,6 +21,18 @@
 #include <mav_msgs/default_topics.h>
 #include <mavros_msgs/HilControls.h>
 #include <mavros_msgs/mavlink_convert.h>
+#include </opt/ros/kinetic/include/mavlink/v1.0/mavlink_types.h>
+#include </opt/ros/kinetic/include/mavlink/v1.0/mavlink_conversions.h>
+#include </opt/ros/kinetic/include/mavlink/v1.0/mavlink_helpers.h>
+#include </opt/ros/kinetic/include/mavlink/v1.0/protocol.h>
+#include </opt/ros/kinetic/include/mavlink/v1.0/common/mavlink_msg_hil_actuator_controls.h>
+#include </opt/ros/kinetic/include/mavlink/v1.0/common/mavlink_msg_hil_controls.h>
+#include </opt/ros/kinetic/include/mavlink/v1.0/common/mavlink_msg_hil_gps.h>
+#include </opt/ros/kinetic/include/mavlink/v1.0/common/mavlink_msg_hil_optical_flow.h>
+#include </opt/ros/kinetic/include/mavlink/v1.0/common/mavlink_msg_hil_rc_inputs_raw.h>
+#include </opt/ros/kinetic/include/mavlink/v1.0/common/mavlink_msg_hil_sensor.h>
+#include </opt/ros/kinetic/include/mavlink/v1.0/common/mavlink_msg_hil_state.h>
+#include </opt/ros/kinetic/include/mavlink/v1.0/common/mavlink_msg_hil_state_quaternion.h>
 
 #include <rotors_hil_interface/hil_listeners.h>
 

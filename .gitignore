@@ -5,3 +5,6 @@
 *.pyc
 *~
 */models/iris/*.sdf
+
+devel/*
+build/*
